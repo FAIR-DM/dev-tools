@@ -36,6 +36,9 @@ pytest-sugar = "^1.0.0"
 tox = "^4.23.2"
 types-python-dateutil = "^2.9.0.20241206"
 types-requests = "^2.32.0.20241016"
+djangorestframework-stubs = "^3.15.2"
+factory-boy = "^3.3.1"
+django-model-info = "^2024.11.5"
 
 
 [build-system]

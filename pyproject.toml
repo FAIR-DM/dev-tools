@@ -11,7 +11,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.10,<4.0"
 black = "^24.10.0"
 coverage = "^7.6.10"
 deptry = "^0.21.2"

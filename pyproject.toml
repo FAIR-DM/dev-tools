@@ -5,6 +5,7 @@ description = "Tools to assist development of FairDM data portals"
 authors = ["Sam <samuel.scott.jennings@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+include = ["src", "LICENSE", "README.md"]
 
 [tool.poetry.dependencies]
 python = "^3.11"

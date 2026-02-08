@@ -2,6 +2,16 @@
 
 A collection of tools to assist in development of a FairDM data portal
 
+## Versioning Strategy
+
+This package uses **pinned versions with caret (`^`) constraints** for all dependencies:
+
+- Ensures reproducible development environments across projects
+- Allows automatic minor and patch updates via Dependabot
+- Major version updates require manual review
+- Requires Python 3.10+ (aligned with Django 5.0+ and modern tooling ecosystem)
+
+Dependencies are automatically updated monthly via Dependabot, with minor/patch updates auto-merged after passing CI checks.
 
 ## Install from Github Repository
 
@@ -22,8 +32,7 @@ Code formatter for Python
 Code coverage measurement for Python
 
 Extras:
-+ [django-coverage-plugin](https://django-coverage-plugin.readthedocs.io/en/stable/)
-
+- [django-coverage-plugin](https://django-coverage-plugin.readthedocs.io/en/stable/)
 
 **deptry** - [docs](https://deptry.readthedocs.io/en/stable/)
 
@@ -34,7 +43,7 @@ Find unused, missing and transitive dependencies in a Python project.
 A configurable set of panels that display various debug information about the current request/response.
 
 Extras:
-+ django-debug-toolbar-template-profiler 
+- django-debug-toolbar-template-profiler
 
 **django-extensions** - [docs](https://django-extensions.readthedocs.io/en/stable/)
 
@@ -57,9 +66,9 @@ An enhanced interactive Python shell
 Optional static typing for Python
 
 Extras:
-+ [types-requests](https://pypi.org/project/types-requests/)
-+ [types-python-dateutil](https://pypi.org/project/types-python-dateutil/)
-+ [django-stubs](https://github.com/typeddjango/django-stubs)
+- [types-requests](https://pypi.org/project/types-requests/)
+- [types-python-dateutil](https://pypi.org/project/types-python-dateutil/)
+- [django-stubs](https://github.com/typeddjango/django-stubs)
 
 **pylint** - [docs](https://pylint.pycqa.org/en/stable/)
 
@@ -70,10 +79,10 @@ A Python source code, bug and quality checker
 Simple powerful testing with Python
 
 Extras:
-+ pytest-cov
-+ pytest-django
-+ pytest-sugar
-+ pytest-env
+- pytest-cov
+- pytest-django
+- pytest-sugar
+- pytest-env
 
 **tox** - [docs](https://tox.readthedocs.io/en/stable/)
 

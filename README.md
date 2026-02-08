@@ -1,4 +1,4 @@
-# fairdm-dev-tools
+# FairDM Development Tools
 
 A collection of tools to assist in development of a FairDM data portal
 
@@ -32,6 +32,7 @@ Code formatter for Python
 Code coverage measurement for Python
 
 Extras:
+
 - [django-coverage-plugin](https://django-coverage-plugin.readthedocs.io/en/stable/)
 
 **deptry** - [docs](https://deptry.readthedocs.io/en/stable/)
@@ -43,6 +44,7 @@ Find unused, missing and transitive dependencies in a Python project.
 A configurable set of panels that display various debug information about the current request/response.
 
 Extras:
+
 - django-debug-toolbar-template-profiler
 
 **django-extensions** - [docs](https://django-extensions.readthedocs.io/en/stable/)
@@ -66,6 +68,7 @@ An enhanced interactive Python shell
 Optional static typing for Python
 
 Extras:
+
 - [types-requests](https://pypi.org/project/types-requests/)
 - [types-python-dateutil](https://pypi.org/project/types-python-dateutil/)
 - [django-stubs](https://github.com/typeddjango/django-stubs)
@@ -79,6 +82,7 @@ A Python source code, bug and quality checker
 Simple powerful testing with Python
 
 Extras:
+
 - pytest-cov
 - pytest-django
 - pytest-sugar

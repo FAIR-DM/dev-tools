@@ -12,34 +12,75 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4"
-black = "^24.8.0"
-coverage = "^7.6.0"
-deptry = "^0.20.0"
-django-coverage-plugin = "^3.1.0"
-django-debug-toolbar = "^4.4.0"
-django-debug-toolbar-template-profiler = "^2.1.0"
-django-extensions = "^3.2.0"
-django-stubs = "^5.1.0"
-djlint = "^1.35.0"
-invoke = "^2.2.0"
-ipython = "^8.12.0"
-mypy = "^1.14.0"
-pip-licenses = "^4.5.0"
-pre-commit = "^3.5.0"
-pylint-celery = "^0.3"
-pylint-django = "^2.6.1"
-pytest = "^8.3.0"
-pytest-cov = "^5.0.0"
-pytest-django = "^4.11.1"
-pytest-env = "^1.1.5"
-pytest-sugar = "^1.1.1"
-tox = "^4.25.0"
-types-python-dateutil = "^2.9.0.20241206"
-types-requests = "^2.32.0.20241016"
-djangorestframework-stubs = "^3.15.0"
-factory-boy = "^3.3.3"
-django-model-info = "^0.2.2"
-django-browser-reload = "^1.15.0"
+
+# Testing tools - install with: poetry add fairdm-dev-tools[test]
+coverage = {version = "^7.6.0", optional = true}
+django-coverage-plugin = {version = "^3.1.0", optional = true}
+pytest = {version = "^8.3.0", optional = true}
+pytest-cov = {version = "^5.0.0", optional = true}
+pytest-django = {version = "^4.11.1", optional = true}
+pytest-env = {version = "^1.1.5", optional = true}
+pytest-sugar = {version = "^1.1.1", optional = true}
+factory-boy = {version = "^3.3.3", optional = true}
+
+# Development tools - install with: poetry add fairdm-dev-tools[dev]
+black = {version = "^24.8.0", optional = true}
+deptry = {version = "^0.20.0", optional = true}
+django-debug-toolbar = {version = "^4.4.0", optional = true}
+django-debug-toolbar-template-profiler = {version = "^2.1.0", optional = true}
+django-extensions = {version = "^3.2.0", optional = true}
+django-stubs = {version = "^5.1.0", optional = true}
+djlint = {version = "^1.35.0", optional = true}
+invoke = {version = "^2.2.0", optional = true}
+ipython = {version = "^8.12.0", optional = true}
+mypy = {version = "^1.14.0", optional = true}
+pip-licenses = {version = "^4.5.0", optional = true}
+pre-commit = {version = "^3.5.0", optional = true}
+pylint-celery = {version = "^0.3", optional = true}
+pylint-django = {version = "^2.6.1", optional = true}
+tox = {version = "^4.25.0", optional = true}
+types-python-dateutil = {version = "^2.9.0.20241206", optional = true}
+types-requests = {version = "^2.32.0.20241016", optional = true}
+djangorestframework-stubs = {version = "^3.15.0", optional = true}
+django-model-info = {version = "^0.2.2", optional = true}
+django-browser-reload = {version = "^1.15.0", optional = true}
+
+[tool.poetry.extras]
+test = [
+    "coverage",
+    "django-coverage-plugin",
+    "pytest",
+    "pytest-cov",
+    "pytest-django",
+    "pytest-env",
+    "pytest-sugar",
+    "factory-boy",
+]
+dev = [
+    "black",
+    "deptry",
+    "django-debug-toolbar",
+    "django-debug-toolbar-template-profiler",
+    "django-extensions",
+    "django-stubs",
+    "djlint",
+    "invoke",
+    "ipython",
+    "mypy",
+    "pip-licenses",
+    "pre-commit",
+    "pylint-celery",
+    "pylint-django",
+    "tox",
+    "types-python-dateutil",
+    "types-requests",
+    "djangorestframework-stubs",
+    "django-model-info",
+    "django-browser-reload",
+]
+
+# Development tools - needed for local development only
+[tool.poetry.group.dev.dependencies]
 
 
 [build-system]

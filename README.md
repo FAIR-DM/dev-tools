@@ -15,11 +15,24 @@ Dependencies are automatically updated monthly via Dependabot, with minor/patch 
 
 ## Install from Github Repository
 
+This package provides dependencies organized as optional extras:
+
+- **`[test]`** - Testing tools (pytest, coverage, factory-boy, etc.) - compatible with Django 4.2+
+- **`[dev]`** - Development tools (debug-toolbar, stubs, formatters, etc.) - may require Django 5.0+
+
+### For CI/Testing (Django 4.2+ compatible)
+
 ```bash
-
-poetry add -G dev git+https://github.com/FAIR-DM/dev-tools
-
+poetry add -G test git+https://github.com/FAIR-DM/dev-tools#[test]
 ```
+
+### For Local Development (full tooling)
+
+```bash
+poetry add -G dev git+https://github.com/FAIR-DM/dev-tools#[test,dev]
+```
+
+**Note:** The `[dev]` extra includes Django-specific tools that may have minimum version requirements (e.g., Django 5.0+). Use only `[test]` when testing against older Django versions.
 
 ## Tools
 
